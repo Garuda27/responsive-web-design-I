@@ -1,3 +1,348 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
 
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+.index{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+a{
+    color:lightgray;
+}
+
+.navigation{
+	color: gray;
+	display:flex;
+	flex-direction:row;
+	margin-left: 20px;
+}
+
+li{
+	margin-left: 25px;
+	padding: 20px;
+    display: inline-block;
+    color: lightgray;
+}
+
+.logo{
+    padding-left: 50px;
+    height: 40px;
+    padding-top: 10px;
+}
+
+header{
+	display:flex;
+	flex-direction:row;
+	padding: 40px;
+}
+
+h1 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-items: center;
+	margin-top:50px;
+}
+
+iod{
+	font-size:75px;
+}
+
+button{
+    border: 1px solid black;
+    background-color: white;
+    padding:5px;
+    padding-left:30px;
+    padding-right:30px;
+    
+}
+
+.section1{
+	height: 200px;
+	border-top: 1px solid black;
+	margin-right: 0px;
+	padding: 30px;
+}
+
+p{
+	width: 275px;
+}
+
+.feature{
+	width: 400px;
+}
+
+feature, about, service, product, vision{
+	display:inline-block;
+}
+
+.middle-img{
+	padding-right: 0px;
+	padding-bottom: 50px;
+	position: relative;
+}
+
+.section2{
+	border-bottom: 1px solid black;
+	text-align: left;
+	margin-right: 0px;
+	padding:30px;
+}
+
+.contact{
+	margin-right: 675px;
+	width: 150px;
+	display: block;
+}
+
+/*Services Page*/
+.services{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+h3{
+	font-size: 35px;
+	margin-top: 10px;
+}
+.para1{
+	width: 1000px;
+	padding-bottom:15px;
+	
+	margin-bottom:15px;
+}
+.boxes{
+	width: 1100px;
+	display:flex;
+	flex-flow: column wrap;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	padding: 50px;
+}
+section{
+	display:flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+box{
+	padding:30px;
+	border: 1px solid black;
+	background-color: lightgray;
+	margin: 20px;
+}
+.parabox{
+	width: 350px;
+	margin-bottom: 30px;
+}
+.facts{
+	display:flex;
+	flex-flow:row wrap;
+	justify-content: space-around;
+	margin-left: 100px;
+	margin-top: 30px;
+}
+.lastpara{
+	display:flex;
+	flex-direction:column;
+	justify-content: flex-start;
+}
+.servicelist{
+	padding: 10px;
+}
+.services-info-img{
+	margin-left: 100px;
+}
+/*----------responsive design-----------------*/
+
+@media(max-width:800px){
+        h2{
+            padding-top: 50px;
+        }
+        p{
+            width: 90%;
+        }
+        .navigation{
+        flex-flow: row wrap;
+        justify-content: center;
+        }
+        li{
+            margin-top:10px;
+            width:15%;
+            text-align: center;
+            margin-left:0px;
+        }
+        .logo{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 30%;
+            padding:10px;
+            height: 50px;
+        }
+        .logodiv{
+            width:100%;
+            order:-1;
+        }
+        header{
+            padding-top: 10px;
+            padding-bottom:40px
+        }
+        iod{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .middle-img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width:95%;
+            margin-top: 35px;
+            padding-bottom: 0px;
+        }
+        .code{
+            display:none;
+        }
+        .contact-div{
+            display: block;
+            margin-left: 100px;
+            margin-right: 0px;
+            padding-top: 30px;
+        }
+        .section1{
+            display:flex;
+            flex-direction: row;
+        }
+        .section2{
+            display:flex;
+            flex-direction: row;
+        }
+        .feature{
+            width: 90%;
+        }
+    }
+    @media(max-width:500px){
+        h2{
+            padding-top: 50px;
+        }
+        p{
+            width: 90%;
+        }
+        .navigation{
+            width:100%;
+            flex-direction:column;
+            justify-content: center;
+        }
+        li{
+            width:100%;
+            border-top: 1px solid lightgray;
+            border-bottom: 1px solid lightgray;
+            text-align: center;
+            margin-left:0px;
+        }
+        .logo{
+            order:-1;
+            width: 175px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding:10px;
+            height: 50px;
+        }
+        header{
+            padding-top: 10px;
+            padding-bottom:40px
+        }
+        iod{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .middle-img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width:90%;
+            margin-top: 170px;
+            padding-bottom: 0px;
+        }
+        .code{
+            display:none;
+        }
+        .contact-div{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+            .section1{
+                display:flex;
+                flex-direction: column;
+            }
+            .section2{
+                display:flex;
+                flex-direction: column;
+            }
+        }
